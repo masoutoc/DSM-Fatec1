@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input{
+            color: white;
+            background-color: #444;
+            border: 1px color(#888);
+            border-radius: 5px;
+            margin: 4px;
+        }
+
+        .nome{
+            width: 200px;
+        }
+
+        .idade{
+            width: 50px;
+            text-align: right;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        button{
+            color: white;
+            background-color: #444;
+            border: #444 solid 1px;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" value="Maria" class="nome">
+        </div>
+        <div>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" value="18" class="idade">
+        </div>
+        <div>
+        <button>Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
