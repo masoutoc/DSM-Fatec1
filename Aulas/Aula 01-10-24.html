@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- align items -> center, flex-end, flex-start-->
+
+    <!--justify-content -> space-evenly, space-around,space-between, center -->
+
+    <!--flex direction -> row, row-reverse, column, column-reverse-->
+
+    <style>
+        #um{
+            display: flex;
+            /* flex-direction: row; */
+            align-items: center;
+            justify-content: space-evenly;
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+        }
+        
+        #um > div {
+            border: 2px dotted red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="um">
+        <div style="align-self: center;">A</div>
+        <div style="align-self: flex-start;">B</div>
+        <div style="align-self: flex-end;">C</div>
+    </div>
+</body>
+</html>
