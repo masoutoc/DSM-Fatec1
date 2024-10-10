@@ -25,6 +25,7 @@
             flex: 0 0 70px;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             width:100vw;
             border-bottom: 1px solid #aaa;
             box-sizing: border-box;
@@ -46,17 +47,37 @@
             box-sizing: border-box;
             }
 
+            #titulo{
+            display: flex;
+            flex-direction: row;
+            justify-items: left;
+            font-size: 40px;
+            }
+
+            #avatar{
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            }
     </style>
 </head>
 <body>
 
     <div id="menu">
-        <img src="/imgs/Logo CSS.png" alt="Logo CSS" width="60" height="60">
-        <h1>CSS3</h1>
-        <div></div>
+
+        <div id="titulo">
+            <img src="/imgs/Logo CSS.png" alt="Logo CSS" width="60" height="60">
+            <div>CSS3</div>
+        </div>
+        
+        <div id="avatar">
+            <div>Bill Gates</div>
+            <img src="/imgs/avatar.jpg" alt="avatar" width="42" height="42">
+        </div>
 
     </div>
-    <div id="corpo">conteúdo
+
+    <div id="corpo">
     </div>
     <div id="rodape">
         <img src="../imgs/Fatec Jcr.jpg" alt="Logo Fatec Jcr" width="87px" height="41px">

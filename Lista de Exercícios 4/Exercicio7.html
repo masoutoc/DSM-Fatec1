@@ -32,24 +32,9 @@
             }
 
             #corpo {
-            flex: 1 1 auto;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex: 1 1 auto;
             width:100vw;
-            background-color: #444;
-            color: white;
-            }
-
-            form{
-            width: 80vw;
-            }
-
-            input{
-            width: 80vw;
-            height: 25px;
-            border-radius: 5px;
-            border: none;
             }
             
             #rodape {
@@ -66,29 +51,26 @@
             display: flex;
             flex-direction: row;
             justify-items: left;
-            font-size: 50px;
+            font-size: 45px;
             }
 
             #avatar{
             display: flex;
             align-items: center;
-            font-size: 18px;
+            font-size: 15px;
             }
 
-            #botoes{
+            #corpo > #esquerda{
             display: flex;
             flex-direction: column;
-            align-items: end;
+            width: 200px;
+            background-color: yellow;
             }
 
-            .botao{
-            background-color: #1E90FF;
-            color: white;
-            margin: 5px;
-            border-radius: 5px;
-            border: none;
+            #corpo > #direita{
+            width: 100%;
+            background-color: cyan;
             }
-
     </style>
 </head>
 <body>
@@ -96,38 +78,29 @@
     <div id="menu">
 
         <div id="titulo">
-        <img src="../imgs/Logo CSS.png" alt="Logo CSS" width="60" height="60">
-        <div>CSS3</div>
+            <img src="/imgs/Logo CSS.png" alt="Logo CSS" width="60" height="60">
+            <div>CSS3</div>
         </div>
-
+        
         <div id="avatar">
             <div>Bill Gates</div>
-            <img src="../imgs/avatar.jpg" alt="avatar" width="42" height="42">
+            <img src="/imgs/avatar.jpg" alt="avatar" width="42" height="42">
         </div>
 
     </div>
 
+
     <div id="corpo">
+        <div id="esquerda">
 
-        <form>
-            <fieldset>
-                <legend>Login</legend>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="password">
-                </div>
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="password">
-                </div>
-                <div id="botoes">
-                    <input type="submit" value="Enviar" class="botao">
-                    <input type="reset" value="Limpar" class="botao">
-                </div>
-            </fieldset>
-        </form>
+        </div>
+        <div id="direita">
 
+        </div>
     </div>
+
+
+
     <div id="rodape">
         <img src="../imgs/Fatec Jcr.jpg" alt="Logo Fatec Jcr" width="87px" height="41px">
         <img src="../imgs/CPS.png" alt="Logo CPS" width="85px" height="70px">

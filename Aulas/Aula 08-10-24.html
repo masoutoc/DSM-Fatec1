@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style> 
+    
+    /* o body define a cor do fundo como amarelo
+    o max-width define como entre 600 até 700 laranja
+    é o max-width com menos de 600 vermelho */
+
+    /*No exemplo a seguir o estilo definido no corpo da média query (@media screen) substituíra o estilo definido fora (em body), quando a media query se tornar verdadeira*/
+    
+    body { 
+        background-color: yellow; 
+        } 
+    
+    @media screen and (max-width: 700px) { 
+        body { background-color: orange;} 
+        } 
+    
+    @media screen and (max-width: 600px) { 
+        body { background-color: red;} 
+        } 
+
+    /* quando a tela estiver no "modo" paisagem (landscape) ficará na cor ciano, já quando estiver no "modo" retrato (portrait) ficará azul claro */
+
+    @media screen and (orientation: landscape) {
+        body {background-color: cyan;}
+    }
+
+    @media screen and (orientation: portrait) {
+        body {background-color: lightblue;}
+    }
+
+    /* Screen definiu o fundo como cinza e as letras como brancas
+    Print, quando for imprimir a fonte ficará em italico e a cor vermelha (utilizar ctrl + P para abrir a aba de impressão)  */
+
+    @media screen {
+        body {
+            background-color: #555;
+            color: #fff;
+        }
+    }
+
+    @media print {
+        body {
+            font-style: italic;
+            color: red;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <div>Media Query</div>
+
+</body>
+</html>
