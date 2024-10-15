@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            display: flex;
+            margin: 0px;
+            height: 100vh;
+        }
+
+        .container{
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+        }
+
+        .um{
+            flex: 1;
+            font-size: 30px;
+            background-color: lightyellow;
+        }
+
+        .dois{
+            flex: 1;
+            font-size: 30px;
+            background-color: lightgreen;
+        }
+
+        .tres{
+            flex: 1;
+            font-size: 30px;
+            background-color: lightcoral; 
+        }
+        
+        @media (orientation: portrait) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media (orientation: landscape) {
+            body {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        @media (max-width: 600px){
+            .dois, .tres {
+                display: none;
+            }
+        } 
+
+        @media (max-width: 899px){
+            .tres {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="um">A</div>
+        <div class="dois">B</div>
+        <div class="tres">C</div>
+    </div>
+</body>
+</html>
