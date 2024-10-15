@@ -20,40 +20,35 @@
 
         .um{
             flex: 1;
+            font-size: 30px;
             background-color: lightyellow;
         }
 
         .dois{
             flex: 1;
+            font-size: 30px;
             background-color: lightgreen;
         }
 
         .tres{
             flex: 1;
+            font-size: 30px;
             background-color: lightcoral; 
         }
 
         @media (max-width: 800px){
-            .container {
+            .um, .dois, .tres {
                 display: flex;
                 flex-direction: row;
                 font-size: 14px;
             }
         }
         
-        @media (min-width: 1000px){
-            .container {
+        @media (min-width: 801px) and (max-width: 1000px){
+            .um, .dois, .tres {
                 display: flex;
                 flex-direction: column;
-                font-size: 40px;
-            }
-        }
-
-        @media (min-width: 1001px){
-            .container {
-                display: flex;
-                flex-direction: column;
-                font-size: 50px;
+                font-size: 20px;
             }
         }
     </style>
