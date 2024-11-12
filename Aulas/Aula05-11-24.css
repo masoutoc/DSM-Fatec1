@@ -1,0 +1,12 @@
+*{
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3{
+    padding-top: 25px;
+}
+
+h4{
+    padding: 15px;
+}
