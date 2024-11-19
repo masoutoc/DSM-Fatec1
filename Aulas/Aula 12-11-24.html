@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Aulas/Aula 19-11-24 Codigo.js"></script>
+    <!-- essa script está sendo usada na tag button no final do documento, porém o correto é criar um novo documento que iremos chamar de "codigo.js" para separar os codigos em js da estrutura do html, e chamar o doc por meio do src-->
+</head>
+<body onload="console.log('Já carregou!')">
+    <h3 title="Agenda" 
+        onmouseover="console.log('Entrou')"
+        onmouseout="console.log('Saiu')">
+        Semana
+        <!-- quando passar o mouse por cima vai aparecer 'Entrou' e quando retirar o mouse irá aparecer 'Saiu' -->
+    </h3> 
+    <div id="lista"> 
+        <p class="dia">Segunda-feira</p> 
+        <p class="dia" onclick="console.log('Já clicou!')">Terça-feira</p>
+        <p class="dia">Quarta-feira</p> 
+        <p class="dia">Quinta-feira</p> 
+        <p class="dia">Sexta-feira</p>  
+        <p class="fim de semana" id="sbd">Sabado</p> 
+        <p class="fim de semana" onmouseover="console.log('Agora movimento')">Domingo</p> 
+    </div>
+
+    <form action="">
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" onchange="console.log('Mudou!')"> 
+        <!-- digitar algo e pressionar o tab para ver no console do navegador -->
+
+        <br><br>
+
+        <label for="sobrenome">Digite seu sobrenome:</label>
+        <input type="text" id="sobrenome" onchange="this.value = event.target.value.toUpperCase()"> 
+        <!-- esse objeto faz com o que for escrito dentro do imput fique em letra maiuscula assim que for enviado -->
+
+        <br><br>
+
+        <label for="email">Possui email? S ou N:</label>
+        <input type="text" id="email" onkeydown="console.log('Pressionada:', event.key)" onkeyup="console.log('Solta:', event.key)">
+
+        <br><br>
+    </form>
+
+    <button onclick="clicar()">
+        Enviar
+    </button>
+</body>
+</html>
