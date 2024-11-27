@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animais</title>
+    <script src="./Aula 26-11-24.js"></script>
+</head>
+<body>
+    <h1>Cadastre seus animais:</h1>
+    <form id="CadAnimais" onsubmit="cadastroAnimais(); return false;">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="ordem">Ordem:</label>
+        <input type="text" id="ordem" name="ordem" required><br><br>
+
+        <label for="classe">Classe:</label>
+        <select id="classe" name="classe" required>
+            <option value="mamifero">Mamífero</option>
+            <option value="reptil">Reptil</option>
+            <option value="anfibio">Anfibio</option>
+            <option value="ave">Ave</option>
+            <option value="peixe">Peixe</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit" value="CADASTRAR" onclick="cadastroAnimais()">Cadastrar</button>
+        <!-- o type="submit" SEMPRE atualiza a pagina ao serem inseridas as informações, ou seja, todo conteudo seria perdido e a lista não seria preenchiada a cada inclusão. Para previnir isso, no começo do formulario colocamos o JS onsubmit="cadastroAnimais(); return false;" sendo assim, o comportamento padrão (recarregar a página) é prevenido usando return false. NESSE CASO COM O RETURN FALSE O SORMULÁRIO NÃO É SUBMETIDO DE VERDADE -->
+
+        <ul id="listaAnimais">
+
+        </ul>
+
+        <!-- usamos o document.querySelector("#CadAnimais").reset(); no arquivo em JavaScrip (aula 26-11-24.js) para resetar o formulario, ficando assim, mais facil do usuario inserir outras informações -->
+    </form>
+</body>
+</html>
