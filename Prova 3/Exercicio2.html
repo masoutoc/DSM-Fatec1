@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro e Classificação</title>
+    <script src="./Exercicio2.js"></script>
+</head>
+<body>
+    <form id="cadastroForm" onsubmit="envioForm(); return false;">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br>
+
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <br><br>
+        
+        <label for="bairro">Bairro:</label>
+        <select id="bairro" name="bairro" required>
+            <option value="jardim das oliveiras">Jardim das Oliveiras</option>
+            <option value="vila romana">Vila Romana</option>
+            <option value="jardim do portal">Jardim do Portal</option>
+            <option value="jardim panorama">Jardim Panorama</option>
+        </select><br>
+        
+        <br><br>
+        
+        <button type="submit">Enviar</button>
+
+        <table id="infoPessoa">
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>IDADE</th>
+                    <th>CATEGORIA</th>
+                    <th>LOCAL</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </form>    
+</body>
+</html>
